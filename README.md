@@ -51,3 +51,12 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+### Docker
+OSX
+`docker-machine start default`
+`eval "$(docker-machine env default)"`
+`docker-compose up`
+
+to launch the app
+get ip: `docker-machine ip default`
+ex: http://192.168.99.100:4200
