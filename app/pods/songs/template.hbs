@@ -1,0 +1,9 @@
+{{#each model as |song|}}
+  <div>
+    <div>name: {{song.name}}</div>
+    <div>genre: {{song.genre}}</div>
+    <div>key: {{song.key}}</div>
+  </div>
+{{/each}}
+
+{{outlet}}
