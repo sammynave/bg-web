@@ -25,6 +25,12 @@ http://www.ember-cli-mirage.com/docs/v0.2.0-beta.7/shorthands/
 */
   this.namespace = 'api';
   this.get('/songs');
+  this.get('/songs/new');
+  this.post('/songs', (schema, request) => {
+    const attrs = JSON.parse(request.requestBody).song;
+
+    return schema.songs.create(attrs);
+  });
   this.get('/users');
 
   this.get('/users/:id', ({ users }, request) => {

@@ -1,4 +1,5 @@
 <container>
+  {{outlet}}
   <vbox>
     <hbox>
       <centered>songs</centered>
@@ -8,5 +9,4 @@
       {{song-row name=song.name key=song.key genre=song.genre}}
     {{/each}}
   </vbox>
-  {{outlet}}
 </container>
