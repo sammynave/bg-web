@@ -1,7 +1,12 @@
-{{input value=model.name placeholder="name"}}
-{{input value=model.key placeholder="key"}}
-{{input value=model.genre placeholder="genre"}}
-
-<button {{action (route-action 'save')}}>save</button>
+<hbox class="{{styles.add-song}}">
+  <box xs=8>{{input value=model.name placeholder="name"}}</box>
+  <box xs=1>{{input value=model.key placeholder="key"}}</box>
+  <box xs=3>{{input value=model.genre placeholder="genre"}}</box>
+</hbox>
+<hbox class="{{styles.add-song}} justify-end">
+  <box xs=3>
+    <button {{action (route-action 'save')}}>save</button>
+  </box>
+</hbox>
 
 {{outlet}}
