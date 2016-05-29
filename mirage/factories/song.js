@@ -5,11 +5,11 @@ export default Factory.extend({
     return `${faker.name.firstName()} the ${faker.name.jobTitle()}`;
   },
   key() {
-    let notes = ['A','Ab', 'A#', 'Am', 'G','Gb', 'G#', 'Gm', 'C','Cb', 'C#', 'Cm'];
-    return notes[Math.round(Math.random() * (notes.length - 1))];
+    let notes = ['A','Ab', 'A#', 'Am', 'G','Gb', 'G#', 'Gm', 'C', 'C#', 'Cm'];
+    return faker.random.arrayElement(notes);
   },
   genre() {
     let genres = ['bluegrass', 'irish', 'oldtime'];
-    return genres[Math.round(Math.random() * (genres.length - 1))];
+    return faker.random.arrayElement(genres);
   }
 });
