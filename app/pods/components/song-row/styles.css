@@ -1,0 +1,11 @@
+.genre {
+  text-align: right;
+}
+
+.key {
+  text-align: center;
+}
+
+.song-row box {
+  padding: 1rem 0;
+}

@@ -1,9 +1,12 @@
-{{#each model as |song|}}
-  <div>
-    <div>name: {{song.name}}</div>
-    <div>genre: {{song.genre}}</div>
-    <div>key: {{song.key}}</div>
-  </div>
-{{/each}}
-
-{{outlet}}
+<container>
+  <vbox>
+    <hbox>
+      <centered>songs</centered>
+    </hbox>
+    {{song-row name="name" key="key" genre="genre"}}
+    {{#each model as |song|}}
+      {{song-row name=song.name key=song.key genre=song.genre}}
+    {{/each}}
+  </vbox>
+  {{outlet}}
+</container>

@@ -1,0 +1,9 @@
+@value c-purple, c-red, c-white, c-orange from 'bg-web/styles/colors';
+
+.link a {
+  padding: 1rem 0;
+  text-decoration: none;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
