@@ -1,9 +1,14 @@
-{{#each model as |user|}}
-  <div>
-    {{#link-to 'users.show' user.id}}
-      {{user.firstName}}
-    {{/link-to}}
-  </div>
-{{/each}}
-
-{{outlet}}
+<container>
+  <vbox>
+    <hbox class="{{styles.link}}">
+      {{#each model as |user|}}
+        <centered>
+          {{#link-to 'users.show' user.id}}
+            {{user.firstName}}
+          {{/link-to}}
+        </centered>
+      {{/each}}
+    </hbox>
+    <hbox>{{outlet}}</hbox>
+  </vbox>
+</container>

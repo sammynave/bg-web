@@ -1,0 +1,14 @@
+@value c-purple, c-red, c-white, c-orange from 'bg-web/styles/colors';
+
+.nav a {
+  padding: 1rem 0;
+  text-decoration: none;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.link :global(.active) {
+  color: c-purple;
+  font-size: 1.1rem;
+}

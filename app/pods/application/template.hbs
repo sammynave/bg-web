@@ -1,3 +1,12 @@
-<h2 id="title">application template</h2>
-
-{{outlet}}
+<container>
+  <vbox>{{link-to "bg" "application"}}</vbox>
+  <vbox>
+    <hbox class="{{styles.nav}}">
+      <centered class="{{styles.link}}">{{link-to "users" "users"}}</centered>
+      <centered class="{{styles.link}}">{{link-to "songs" "songs"}}</centered>
+    </hbox>
+    <fill>
+      <centered>{{outlet}}</centered>
+    </fill>
+  </vbox>
+</container>
