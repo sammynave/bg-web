@@ -1,0 +1,8 @@
+.add-song {
+  padding: .5rem 0;
+}
+
+.add-song button,
+.add-song input {
+  padding: .5rem;
+}
