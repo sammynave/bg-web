@@ -26,6 +26,10 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV['ember-cli-mirage'] = {
+      enabled: false
+    }
+    ENV.apiEndpoint = 'http://localhost:4000';
   }
 
   if (environment === 'test') {
@@ -38,10 +42,10 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
+    ENV.apiEndpoint = '';
   }
 
   if (environment === 'production') {
-
   }
 
   return ENV;

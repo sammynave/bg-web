@@ -6,7 +6,7 @@
     </hbox>
     {{song-row name="name" key="key" genre="genre"}}
     {{#each model as |song|}}
-      {{song-row name=song.name key=song.key genre=song.genre}}
+      {{song-row name=song.name key=song.key genre=song.genre testId="song-row"}}
     {{/each}}
   </vbox>
 </container>
