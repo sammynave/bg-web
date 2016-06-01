@@ -1,4 +1,4 @@
-@value c-purple, c-red, c-white, c-orange from 'bg-web/styles/colors';
+@value c-purple, c-red, c-white, c-orange from 'pick-another-web/styles/colors';
 
 .nav a {
   padding: 1rem 0;

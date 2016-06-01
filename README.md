@@ -1,4 +1,4 @@
-# Bg-web
+# Pick Another web
 
 [![Build Status](https://travis-ci.org/sammynave/pick-another-web.svg?branch=master)](https://travis-ci.org/sammynave/pick-another-web)
 

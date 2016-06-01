@@ -1,19 +1,19 @@
 npm:
   build: ./
   volumes:
-    - .:/bg-web
+    - .:/pick-another-web
   entrypoint: ['/usr/local/bin/npm']
 
 bower:
   build: ./
   volumes:
-    - .:/bg-web
+    - .:/pick-another-web
   entrypoint: ['/usr/local/bin/bower', '--allow-root']
 
 server:
   build: ./
   volumes:
-    - .:/bg-web
+    - .:/pick-another-web
   command: server --watcher polling
   ports:
     - "4200:4200"

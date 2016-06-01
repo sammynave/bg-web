@@ -2,8 +2,8 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'bg-web',
-    podModulePrefix: 'bg-web/pods',
+    modulePrefix: 'pick-another-web',
+    podModulePrefix: 'pick-another-web/pods',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',

@@ -1,7 +1,7 @@
 {
-  "name": "bg-web",
+  "name": "pick-another-web",
   "version": "0.0.0",
-  "description": "Small description for bg-web goes here",
+  "description": "Small description for pick-another-web goes here",
   "private": true,
   "directories": {
     "doc": "doc",

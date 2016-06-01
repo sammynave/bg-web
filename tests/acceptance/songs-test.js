@@ -1,5 +1,5 @@
 import { test } from 'qunit';
-import moduleForAcceptance from 'bg-web/tests/helpers/module-for-acceptance';
+import moduleForAcceptance from 'pick-another-web/tests/helpers/module-for-acceptance';
 
 moduleForAcceptance('Acceptance | songs');
 
