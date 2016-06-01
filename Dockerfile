@@ -3,7 +3,7 @@ FROM node:4.4.5
 EXPOSE 4200
 EXPOSE 49152
 
-WORKDIR /bg-web
+WORKDIR /pick-another-web
 
 ENTRYPOINT ["/usr/local/bin/ember"]
 CMD ["ember", "server"]
