@@ -1,5 +1,4 @@
 /* jshint node: true */
-
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'pick-another-web',
@@ -46,6 +45,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.apiEndpoint = process.env.PAO_API_ENDPOINT
   }
 
   return ENV;
