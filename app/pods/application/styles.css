@@ -1,14 +1,11 @@
 @value c-purple, c-red, c-white, c-orange from 'pick-another-web/styles/colors';
 
 .nav a {
-  padding: 1rem 0;
-  text-decoration: none;
+  padding: 1em 0 0;
   display: inline-flex;
-  width: 100%;
   justify-content: center;
 }
 
-.link :global(.active) {
-  color: c-purple;
-  font-size: 1.1rem;
+.gutter {
+  padding: 0 .5em 1em;
 }

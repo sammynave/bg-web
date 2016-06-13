@@ -1,0 +1,24 @@
+.full {
+  width: 100%;
+}
+
+.label,
+.input {
+  composes: full;
+}
+
+.input {
+  padding-bottom: .75em;
+}
+
+.submit {
+  transition: all .15s ease-in-out;
+  background-color: white;
+  color: black;
+}
+
+.submit:hover {
+  transition: all .15s ease-in-out;
+  background-color: black;
+  color: white;
+}

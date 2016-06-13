@@ -11,7 +11,12 @@ module.exports = function(defaults) {
     enabled: true
   }
   var app = new EmberApp(defaults, {
-    fingerprint: fingerprintOptions
+    fingerprint: fingerprintOptions,
+    nodeAssets: {
+      'normalize.css': {
+        import: ['normalize.css']
+      }
+    }
   });
 
   return app.toTree();

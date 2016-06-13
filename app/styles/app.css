@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1rem;
+}
+
+label {
+  font-size: 1rem;
+}
+
+input {
+  font-size: 1rem;
+  padding: .5em;
+  border: .01em solid;
+}
+
+button {
+  background: white;
+  padding: .5em 1em;
+  border: .01em solid;
+  cursor: pointer;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+  border-bottom: .01em dashed black;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
+  border-bottom: .01em solid black;
+}

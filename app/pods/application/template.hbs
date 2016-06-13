@@ -1,12 +1,16 @@
 <container>
-  <vbox>{{link-to "PickAnother" "application"}}</vbox>
   <vbox>
-    <hbox class="{{styles.nav}}">
-      <centered class="{{styles.link}}">{{link-to "users" "users"}}</centered>
-      <centered class="{{styles.link}}">{{link-to "songs" "songs"}}</centered>
-      <centered class="{{styles.link}}">{{link-to "add song" "songs.new"}}</centered>
+    <hbox class="{{styles.nav}} {{styles.gutter}}">
+      <centered class="{{styles.link}}">{{link-to "PickAnother" "application"}}</centered>
+      {{#if sessionAuthenticated}}
+        <centered class="{{styles.link}}">{{link-to "users" "users"}}</centered>
+        <centered class="{{styles.link}}">{{link-to "songs" "songs"}}</centered>
+        <centered class="{{styles.link}}">{{link-to "add song" "songs.new"}}</centered>
+      {{else}}
+        <centered class="{{styles.link}}">{{link-to "login" "login"}}</centered>
+      {{/if}}
     </hbox>
-    <fill>
+    <fill class="{{styles.gutter}}">
       <centered>{{outlet}}</centered>
     </fill>
   </vbox>

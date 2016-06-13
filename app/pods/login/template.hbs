@@ -1,0 +1,30 @@
+<container>
+  <vbox>
+    <form {{action 'authenticate' on='submit'}}>
+      <hbox xs="12">
+        {{#if errorMessage}}
+          <p>{{errorMessage}}</p>
+        {{/if}}
+      </hbox>
+
+      <hbox xs="12" class="{{styles.label}}">
+        <label for="identification">Login</label>
+      </hbox>
+      <hbox xs="12" class="{{styles.input}}">
+        {{input id='identification' class=styles.full placeholder='Enter Login' value=identification}}
+      </hbox>
+
+      <hbox xs="12" class="{{styles.label}}">
+        <label for="password">Password</label>
+      </hbox>
+      <hbox xs="12" class="{{styles.input}}">
+        {{input id='password' class=styles.full  placeholder='Enter Password' type='password' value=password}}
+      </hbox>
+
+      <hbox justify="end">
+        <button type="submit" class="{{styles.submit}}">Login</button>
+      </hbox>
+    </form>
+  </vbox>
+</container>
+
