@@ -1,5 +1,3 @@
-@value c-purple, c-red, c-white, c-orange from 'pick-another-web/styles/colors';
-
 .link a {
   padding: 1rem 0;
   display: inline-flex;

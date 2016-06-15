@@ -1,3 +1,5 @@
+@value c-white, c-black from '../../styles/colors.css';
+
 .full {
   width: 100%;
 }
@@ -13,12 +15,12 @@
 
 .submit {
   transition: all .15s ease-in-out;
-  background-color: white;
+  background-color: c-white;
   color: black;
 }
 
 .submit:hover {
   transition: all .15s ease-in-out;
-  background-color: black;
+  background-color: c-black;
   color: white;
 }
